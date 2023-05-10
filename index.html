@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=  , initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="imagenes/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="imagenes/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+  <link rel="manifest" href="imagenes/site.webmanifest">
   <title>Restaurante</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,363 +18,329 @@
 <body>
 
   <header>
+    <div class="container">
+      <div class="header">
 
-    <div class="menu container">
-      <a href="#"><img src="imagenes/logo blanco.png" class="logo" width="70" alt=""></a>
-      <input type="checkbox" id="menu">
-      <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
-      <nav class="navbar">
-        <ul>
-          <li> <a href="#">Inicio</a></li>
-          <li> <a href="#">Servicios</a></li>
-          <li> <a href="#">Productos</a></li>
-          <li> <a href="#">Contacto</a></li>
+        <div class="logo">
+          <a href="#"><img src="imagenes/logo-blanco.png" class="logo" width="70" alt=""></a>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li> <a href="#">Inicio</a></li>
+            <li> <a href="#productos">Productos</a></li>
+            <li> <a href="#footer">Contacto</a></li>
+          </ul>
+        </nav>
+        <img src="imagenes/menu.png" class="menu-icono" alt="hamburguer menu" />
+      </div>
+      <div class="top-content">
 
-        </ul>
-      </nav>
-    </div>
+        <div class="top-txt">
+          <h1>Bienvenido a Panda's Food </h1>
+          <p>
+            ¡Bienvenido a Panda's Food! Somos un restaurante especializado en cocina asiática, ubicado en un
+            acogedor rincón de la ciudad. Nuestro equipo de chefs expertos trabaja con ingredientes frescos y
+            auténticos para traerte los sabores y aromas más deliciosos de la gastronomía asiática. Desde platos
+            clásicos como el arroz frito y el pollo agridulce, hasta especialidades como los dumplings y el pato
+            laqueado, nuestro menú ofrece una amplia variedad de opciones para satisfacer tus antojos de comida
+            asiática. Con un ambiente acogedor y un servicio amable, en Panda's Food te ofrecemos una
+            experiencia culinaria inolvidable. ¡Ven y descubre la magia de la cocina asiática en Panda's Food!
 
-    <div class="header-content container">
+          </p>
+          <div class="botones">
+            <a href="#productos" class="btn-1">Comprar <img class="icon " src="/imagenes/car.svg" alt=""></a>
+            <a href="#info" class="btn-2">Información <img class="icon " src="imagenes/arrow.svg" alt=""></a>
+          </div>
+        </div>
 
-      <div class="header-txt">
-        <h1>Bienvenido a Panda's Food </h1>
-        <p>
-          ¡Bienvenido a Panda's Food! Somos un restaurante especializado en cocina asiática, ubicado en un
-          acogedor rincón de la ciudad. Nuestro equipo de chefs expertos trabaja con ingredientes frescos y
-          auténticos para traerte los sabores y aromas más deliciosos de la gastronomía asiática. Desde platos
-          clásicos como el arroz frito y el pollo agridulce, hasta especialidades como los dumplings y el pato
-          laqueado, nuestro menú ofrece una amplia variedad de opciones para satisfacer tus antojos de comida
-          asiática. Con un ambiente acogedor y un servicio amable, en Panda's Food te ofrecemos una
-          experiencia culinaria inolvidable. ¡Ven y descubre la magia de la cocina asiática en Panda's Food!
-
-        </p>
-        <div class="botones">
-          <a href="#" class="btn-1">Comprar <img class="icon " src="images/car.svg" alt=""></a>
-          <a href="#" class="btn-2">Información <img class="icon " src="images/arrow.svg" alt=""></a>
+        <div class="top-img">
+          <img src="imagenes/inicio-hd.png" class="comida-ramen " alt="comida-ramen" width="900">
         </div>
       </div>
-
-      <div class="header-img">
-        <img src="imagenes/inicio hd.png" class="comida-ramen " alt="comida-ramen" width="900">
-      </div>
     </div>
-
-    </div>
-
-
   </header>
 
 
-  <main class="product-menu">
-    <div class="container">
+  <main id="productos" class="container">
+    <div class="product">
+      <h2 class="title ">Menu</h2>
+      <img class="hoja" src="imagenes/hoja.png" alt="">
+    </div>
 
-      <div class="product">
-        <h2 class="title ">Menu</h2>
-        <img class="hoja" src="imagenes/hoja.png" alt="">
-      </div>
-
-      <div class="menu-nav">
-        <div id="pro1" class="tab active">Sopas</div>
-        <div id="pro2" class="tab active">Sushi</div>
-        <div id="pro3" class="tab active">Platos Calientes</div>
-      </div>
+    <div class="menu-nav">
+      <div id="pro1" class="tab active">Sopas</div>
+      <div id="pro2" class="tab">Sushi</div>
+      <div id="pro3" class="tab">Platos Calientes</div>
+    </div>
 
 
-      <div class="pro1 tab-content">
-        <div class="box-container-1">
+    <div class="pro1 tab-content">
+      <div class="box-container-1">
 
-          <div class="box-1">
-            <div class="image">
-              <img src="imagenes/sopa wonton remove.png" alt="sopa wontons">
-            </div>
-            <div class="content">
+        <div class="box-1">
+          <div id="wonton-soup" class="image">
+          </div>
+          <div class="content">
+            <div class="content-description">
               <h3>Sopa Wonton</h3>
               <p>
                 Nuestra sopa wonton es una exquisitez que combina sabores intensos y texturas
                 deliciosas. La base de la sopa es un caldo aromático, a menudo de pollo o cerdo, que
-                está lleno de sabores umami. Lo que hace que esta sopa sea realmente especial son los
-                wontons, que son pequeñas albóndigas chinas rellenas de carne de cerdo sazonada, gambas
-                o una combinación de ambos. Los wontons son suculentos y jugosos, y se sirven flotando en el caldo
-                caliente.
+                está lleno de sabores umami.
               </p>
-              <div class="icons">
-                <span class="price">RD$300.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$300.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-1">
-            <div class="image">
-              <img src="imagenes/Egg Drop Soup remove.png" alt="Sopa de Huevo ">
-            </div>
-            <div class="content">
+        <div class="box-1">
+          <div id="egg-soup" class="image">
+          </div>
+          <div class="content">
+            <div class="content-description">
               <h3>Sopa de Huevo</h3>
               <p>
                 Nuestra sopa de huevo es una opción ligera y reconfortante que destaca por su sencillez
                 y suavidad. El plato presenta un caldo caliente y reconfortante, generalmente de pollo o
-                verduras, con hebras de huevo batido que crean una textura única y sedosa. A menudo se
-                combina con cebollas tiernas y cilantro fresco para realzar los sabores. Es una opción
-                perfecta para aquellos que buscan una sopa ligera pero deliciosa, con un sabor suave y
-                reconfortante que te hará sentir cómodo en cualquier época del año. ¡Ven y disfruta de
-                esta deliciosa sopa de huevo en nuestro restaurante!
+                verduras.
               </p>
-              <div class="icons">
-                <span class="price">RD$194.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$194.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-1">
-            <div class="image">
-              <img src="imagenes/Chicken noodle soup.jpg" alt="Sopa de fideos con pollo" width="500">
-            </div>
-            <div class="content">
+        <div class="box-1">
+          <div id="chicken-soup" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Sopa de fideos con pollo</h3>
               <p>
                 Nuestra sopa de fideos con pollo es una opción clásica y reconfortante. Presenta tiernos
-                trozos de pollo cocido en un caldo sabroso, acompañados de fideos de trigo que le dan
-                una textura reconfortante. Además, está repleta de verduras frescas, como zanahorias y
-                apio, que le aportan un delicioso sabor y una nutrición adicional. Es una combinación
-                perfecta de ingredientes simples y sabores reconfortantes que te harán sentir como en
-                casa. ¡Ven y disfruta de esta sopa clásica en nuestro restaurante!
+                trozos de pollo cocido en un caldo sabroso.
               </p>
-              <div class="icons">
-                <span class="price">RD$199.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$199.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-1">
-            <div class="image">
-              <img src="imagenes/pexels-ryutaro-tsukata-6249221-removebg-preview.png" alt="Sopa de fideos con camarones"
-                width="400">
-            </div>
-            <div class="content">
+        <div class="box-1">
+          <div id="shrimp-soup" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Sopa de fideos con camarones</h3>
               <p>
                 Nuestra sopa de fideos con camarones es una deliciosa combinación de fideos de
-                trigo cocidos a la perfección, camarones frescos y jugosos, y una variedad de
-                verduras frescas, todo ello en un caldo aromático y sazonado con especias
-                asiáticas. Una experiencia culinaria reconfortante y llena de sabores exóticos
-                que te transportará a las costas de Asia en cada cucharada. ¡Ven y disfruta de
-                este plato auténtico en nuestro restaurante! </p>
-              <div class="icons">
-                <span class="price">RD$399.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+                trigo cocidos a la perfección, camarones frescos y jugosos.
+              </p>
             </div>
-            <div class="load-more" id="load-more-1">Cargar más</div>
+            <div class="icons">
+              <span class="price">RD$399.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="pro2 tab-content">
-        <div class="box-container-2">
-          <div class="box-2">
-            <div class="image">
-              <img src="imagenes/Sushi bella durmiente.jpg" alt="Sushi" width="400">
-            </div>
-            <div class="content">
+    <div class="pro2 tab-content hidden">
+      <div class="box-container-2">
+        <div class="box-2">
+          <div id="sushi-bella-durmiente" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Bella Durmiente</h3>
               <p>
                 Surimi,pollo,camarón y pepino.</p>
-
-              <div class="icons">
-                <span class="price">8R RD$ $310.00/ 12R RD$470.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">8R RD$ $310.00/ 12R RD$470.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-2">
-            <div class="image">
-              <img src="imagenes/Sushi philadelphia.jpg" alt="Sushi" width="400">
-            </div>
-            <div class="content">
+        <div class="box-2">
+          <div id="sushi-philadelphia" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Sushi philadelphia</h3>
               <p>
                 Salmón, cream cheese y pepino.</p>
-              <div class="icons">
-                <span class="price">8R RD$ $350.00/ 12R RD$500.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">8R RD$ $350.00/ 12R RD$500.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
 
-          <div class="box-2">
-            <div class="image">
-              <img src="imagenes/California.jpg" alt="Sushi" width="400">
-            </div>
-            <div class="content">
+        <div class="box-2">
+          <div id="sushi-california" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Sushi California</h3>
               <p>
                 Surimi, aguacate y pepino.</p>
-
-              <div class="icons">
-                <span class="price">8R RD$ $310.00/ 12R RD$440.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt="sushi"></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">8R RD$ $310.00/ 12R RD$440.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt="sushi"></span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="pro3 tab-content">
-        <div class="box-container-3">
+    <div class="pro3 tab-content hidden">
+      <div class="box-container-3">
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/Tori_teriyaki_-_Cuisse_de_poulet_teriyaki__1_-removebg-preview.png" alt="Tori teriyaki"
-                width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="teriyaki" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Tori teriyaki</h3>
               <p>
                 Filete de pollo en salsa teriyaki.</p>
-
-              <div class="icons">
-                <span class="price">RD$285.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$285.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/Salteado de pollo macerado y hortalizas.jpeg" alt=" Yasaitame" width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="yasaitame" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Yasaitame</h3>
               <p>
                 Salteado de verduras nikkei con filete de muslo de pollo, el pollo puede ser
                 remplazado por camarones, pescado e incluso puede ser mixto. </p>
-              <div class="icons">
-                <span class="price">RD$390.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$390.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/pollo agridulce.jpeg" alt="pollo agridulce" width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="agridulce" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>pollo agridulce</h3>
               <p>
                 Pollo cubierto de una salsa agridulce.</p>
-
-              <div class="icons">
-                <span class="price">RD$460.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$460.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/Salmón teriyaki.jpeg" alt="Salmón teriyaki" width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="salmon" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Salmón teriyaki</h3>
               <p>
                 Filete de salmón cubierto de una salsa agridulce.</p>
-
-              <div class="icons">
-                <span class="price">RD$560.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$560.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/lo mein.jpg" alt="lo mein" width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="lo-mein" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Lo mein</h3>
               <p>
                 Pasta salteada con vegetales y pollo.</p>
-              <div class="icons">
-                <span class="price">RD$390.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$390.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/The Best Recipe for Korean Sweet and Spicy Pork Ribs.jpeg" alt="Costillas asiáticas"
-                width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="costillas" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Costillas asiáticas</h3>
               <p>
                 Costillas cin una BBQ japonesa.</p>
-
-              <div class="icons">
-                <span class="price">RD$645.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$645.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/ramen.jpg" alt="Ramen" width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="ramen" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Ramen</h3>
               <p>
                 Caldo de pollo sabroso y aromático, fideos con textura
                 firme y deliciosa, puede incluir, rebanadas de carne de
                 cerdo asada, huevo marinado, algas, brotes de soja y
                 cebollas tiernas.</p>
-              <div class="icons">
-                <span class="price">RD$350.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
+            </div>
+            <div class="icons">
+              <span class="price">RD$350.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
             </div>
           </div>
+        </div>
 
-          <div class="box-3">
-            <div class="image">
-              <img src="imagenes/nigiri.jpg" alt="Nigiri" width="300">
-            </div>
-            <div class="content">
+        <div class="box-3">
+          <div id="nigiri" class="image"></div>
+          <div class="content">
+            <div class="content-description">
               <h3>Nigiri</h3>
               <p>
                 El nigiri es un plato de sushi que consiste en
                 pequeñas porciones de arroz con forma ovalada,
                 cubiertas con pescado crudo o mariscos frescos.</p>
-
-              <div class="icons">
-                <span class="price">C/U RD$60.00</span>
-                <span class="buy"><img src="imagenes/car.svg" alt=""></span>
-              </div>
             </div>
-            <div class="load-more" id="load-more-3">Cargar más</div>
+            <div class="icons">
+              <span class="price">C/U RD$60.00</span>
+              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+            </div>
           </div>
-
-
-
-
         </div>
       </div>
     </div>
+
   </main>
 
-  <section class="info">
+  <section id="info" class="info">
     <div class="info-content container">
 
       <div class="info-txt">
-        <p> Datos Curiosos</p>
+        <p>Datos Curiosos</p>
         <h2>Información</h2>
 
         <div class="info-sec">
@@ -391,7 +363,8 @@
               <h3>Premios</h3>
               <p>
                 Panda's Food ha sido galardonado con el premio "Mejor Restaurante Chino" por la Asociación de
-                Gastronomía de la ciudad durante tres años consecutivos. </p>
+                Gastronomía de la ciudad durante tres años consecutivos.
+              </p>
 
             </div>
           </div>
@@ -406,51 +379,37 @@
     </div>
   </section>
 
-  <section>
+  <section id="modal">
     <h3>Titulo de Comida</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore dolorem accusantium aliquam.</p>
-    <div>
+    <div class="modal-input">
       <label for="requisitos-especiales">Requisitos especiales:</label>
-      <textarea id="requisitos-especiales" name="requisitos-especiales" rows="4" cols="50"></textarea>
+      <textarea id="requisitos-especiales" name="requisitos-especiales" rows="4" cols="50"
+        placeholder="Agregalos aquí. Haremos lo posible por agregarlos."></textarea>
     </div>
+    <hr>
   </section>
 
-  <footer class="foot container">
+  <footer id="footer" class="container">
 
-    <img class="logo-2" src="imagenes/logo blanco.png" alt="" width="70">
+    <img class="logo-2" src="imagenes/logo-blanco.png" alt="" width="70">
 
     <div class="links">
-      <h4>lorem</h4>
+      <h4>Contacto</h4>
+      <p>Av. Hispanoamericana 100,<br>Santiago De Los Caballeros 51000,<br>Republica Dominicana</p>
+      <p><a href="tel:8097240266">Tel: (809) 724-0266</a></p>
+    </div>
+
+    <div class="links">
+      <h4>Horario</h4>
       <ul>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
+        <li>Lunes a Viernes de 7:30 AM-2 PM</li>
+        <li>Sabados y Domingos Cerrados</li>
       </ul>
     </div>
 
     <div class="links">
-      <h4>lorem</h4>
-      <ul>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-      </ul>
-    </div>
-
-    <div class="links">
-      <h4>lorem</h4>
-      <ul>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Lorem</a></li>
-      </ul>
-    </div>
-
-    <div class="links">
-      <h4>lorem</h4>
+      <h4>Redes Sociales</h4>
       <ul>
         <div class="socials">
           <a href="#">
@@ -473,6 +432,22 @@
     </div>
 
   </footer>
+
+  <section>
+    <div>
+      <p id="piedepág">
+        &copy; Diseñado por Ashley Mendoza/Adrian Torres/Darlenys Santana
+      </p>
+      <div>
+        <p class="ceges">José.Al Almonte</p>
+        <a class="cegesenlace" href="https://www.uapa.edu.do/oferta-academica/colegio-ceges/">Colegio CEGES</a>
+      </div>
+
+    </div>
+    <div>
+
+    </div>
+  </section>
 
   <script src="script.js">  </script>
 </body>
