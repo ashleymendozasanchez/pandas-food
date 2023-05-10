@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
   <link rel="manifest" href="imagenes/site.webmanifest">
-  <title>Restaurante</title>
+  <title>Panda's Food</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -91,7 +91,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$300.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$194.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$199.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$399.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -163,7 +163,7 @@
             </div>
             <div class="icons">
               <span class="price">8R RD$ $310.00/ 12R RD$470.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@
             </div>
             <div class="icons">
               <span class="price">8R RD$ $350.00/ 12R RD$500.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$285.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -231,7 +231,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$390.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$460.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -262,7 +262,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$560.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -277,7 +277,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$390.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -292,7 +292,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$645.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -310,7 +310,7 @@
             </div>
             <div class="icons">
               <span class="price">RD$350.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@
             </div>
             <div class="icons">
               <span class="price">C/U RD$60.00</span>
-              <span class="buy"><img src="imagenes/car.svg" alt=""></span>
+              <div class="buy"></div>
             </div>
           </div>
         </div>
@@ -380,14 +380,18 @@
   </section>
 
   <section id="modal">
-    <h3>Titulo de Comida</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore dolorem accusantium aliquam.</p>
-    <div class="modal-input">
-      <label for="requisitos-especiales">Requisitos especiales:</label>
-      <textarea id="requisitos-especiales" name="requisitos-especiales" rows="4" cols="50"
-        placeholder="Agregalos aquí. Haremos lo posible por agregarlos."></textarea>
+    <div class="modal">
+      <p id="cerrar-modal">cerrar</p>
+      <h3>Titulo de Comida</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore dolorem accusantium aliquam.</p>
+      <div class="modal-input">
+        <label for="requisitos-especiales">Requisitos especiales:</label>
+        <textarea id="requisitos-especiales" name="requisitos-especiales" rows="4" cols="50"
+          placeholder="Agregalos aquí. Haremos lo posible por agregarlos."></textarea>
+      </div>
+      <hr>
+      <div id="modal-button" class="btn-1">Agregar al carrito <img class="icon " src="/imagenes/car.svg" alt=""></div>
     </div>
-    <hr>
   </section>
 
   <footer id="footer" class="container">
@@ -433,19 +437,17 @@
 
   </footer>
 
-  <section>
-    <div>
-      <p id="piedepág">
-        &copy; Diseñado por Ashley Mendoza/Adrian Torres/Darlenys Santana
-      </p>
+  <section id="creditos">
+    <div class="creditos container">
       <div>
-        <p class="ceges">José.Al Almonte</p>
-        <a class="cegesenlace" href="https://www.uapa.edu.do/oferta-academica/colegio-ceges/">Colegio CEGES</a>
+        <p>
+          &copy; Diseñado por Ashley Mendoza, Adrian Torres y Darlenys Santana.
+        </p>
       </div>
-
-    </div>
-    <div>
-
+      <div>
+        <p>José.Al Almonte</p>
+        <a href="https://www.uapa.edu.do/oferta-academica/colegio-ceges/" target="_blank">Colegio CEGES</a>
+      </div>
     </div>
   </section>
 

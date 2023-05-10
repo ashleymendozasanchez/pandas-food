@@ -3,6 +3,10 @@ const menuTab = document.getElementsByClassName("tab");
 const tab1 = document.querySelector(".pro1");
 const tab2 = document.querySelector(".pro2");
 const tab3 = document.querySelector(".pro3");
+const buy = document.getElementsByClassName(".buy");
+const modal = document.querySelector("#modal");
+const modalButton = document.querySelector("#modal-button");
+const close = document.querySelector("#cerrar-modal");
 
 menuIcon.addEventListener("click", () => {
   document.querySelector(".menu-icono").classList.toggle("open");
@@ -27,3 +31,13 @@ for (let i = 0; i < menuTab.length; i++) {
     }
   });
 }
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("buy")) {
+    modal.style.display = "flex";
+  } else if (e.target.id === "modal-button") {
+    modal.style.display = "none";
+  } else if (e.target.id === "cerrar-modal") {
+    modal.style.display = "none";
+  }
+});
